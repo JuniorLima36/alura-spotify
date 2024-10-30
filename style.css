@@ -1,0 +1,402 @@
+:root {
+  --bg-gray-white: #242424;
+  --bg-gray: #121212;
+  --text-gray: #b3b3b3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 325px;
+  padding: 15px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  width: 325px;
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+}
+
+.navigation .logo {
+  width: 80px;
+  height: 24px;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-gray);
+}
+
+.navigation ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navigation img {
+  width: 20px;
+  height: 20px;
+}
+
+.box-library {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-library .book {
+  width: 20px;
+  height: 20px;
+}
+
+.box-library h2 {
+  font-size: 15px;
+  color: var(--text-gray);
+}
+
+.box-library .plus {
+  width: 10px;
+  height: 10px;
+}
+
+.box-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: var(--bg-gray-white);
+}
+
+.box-playlist div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-playlist h3 {
+  font-size: 14px;
+  color: #fff;
+}
+
+.box-playlist p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.box-playlist .box-button {
+  width: 125px;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #121212;
+  background-color: #fff;
+}
+
+.navigation span {
+  color: var(--text-gray);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.navigation span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navigation button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 175px;
+  gap: 5px;
+  padding: 7px;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--text-gray);
+  background-color: var(--bg-gray);
+}
+
+button img {
+  width: 15px;
+  height: 15px;
+}
+
+.navigation button:hover {
+  transform: scale(1.05);
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 80vw;
+  height: 80vh;
+  padding: 15px;
+  margin-left: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.search img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  width: 364px;
+  height: 48px;
+  gap: 10px;
+  border-radius: 25px;
+  background-color: var(--bg-gray-white);
+}
+
+.search-input img {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 300px;
+  background-color: var(--bg-gray-white);
+}
+
+.container-grid {
+  height: 80vh;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message h2 {
+  font-size: 34px;
+  color: #fff;
+}
+
+.message p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.box-content {
+  overflow-y: auto;
+  max-height: 45vh;
+  margin: 24px 0px;
+}
+
+.box-content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.box-content::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.box-grid {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card h3 {
+  color: #fff;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card img {
+  width: 107px;
+  height: auto;
+  margin-left: 100px;
+  transform: rotate(25deg) translate(18%, -18%);
+}
+
+header .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+header .register {
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-gray);
+  background-color: transparent;
+}
+
+header .register:hover {
+  color: #fff;
+}
+
+header .enter {
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px 25px;
+  border-radius: 25px;
+  color: var(--bg-gray);
+  background-color: #fff;
+}
+
+header .enter:hover {
+  transform: scale(1.04);
+}
+
+#result-search {
+  display: none;
+}
+
+.result-search {
+  display: grid;
+  grid-gap:24px;
+  min-width: 155px;
+  height: 80vh;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+}
+
+.card-artist {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.card-artist .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  position: absolute;
+  padding-top: 100px;
+  padding-left: 100px;
+  margin: 10px;
+}
+
+.card-button button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.card-button button img {
+  width: 54px;
+  height: 54px;
+}
+
+.card-artist h2 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.card-artist span {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 14px 40px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+}
+
+footer section {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+}
+
+footer button {
+  padding: 14px 30px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}

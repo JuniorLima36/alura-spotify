@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>Alura - Spotify</title>
+</head>
+<body>
+  <div class="container">
+    <section class="nav-bar">
+      <article class="navigation">
+        <img class="logo" src="assets/logo-spotify.png" alt="">
+        <ul>
+          <li><img src="assets/home.png" alt="">Início</li>
+          <li><img src="assets/lupa.png" alt="">Buscar</li>
+        </ul>
+      </article>
+      <article class="navigation">
+        <div class="box-library">
+          <img class="book" src="assets/book.png" alt="">
+          <h2>Sua bíblioteca</h2>
+          <img class="plus" src="assets/plus.png" alt="">
+        </div>
+        <div class="box-playlist">
+          <div>
+            <h3>Crie sua primeira playlist</h3>
+            <p>É fácil, vamos te ajudar.</p>
+          </div>
+          <button class="box-button" type="button">Criar playlist</button>
+        </div>
+        <span>Cookies</span>
+        <button type="button">
+          <img src="assets/globe.png" alt="">
+          Português do Brasil
+        </button>
+      </article>
+    </section>
+    <main class="container-search">
+      <header>
+        <section class="search">
+          <button type="button"><img src="assets/small-left.png" alt=""></button>
+          <button type="button"><img src="assets/small-right.png" alt=""></button>
+          <article class="search-input">
+            <img src="assets/search.png" alt="">
+            <input id="search" type="text" placeholder="O que você quer ouvir?">
+          </article>
+        </section>
+        <article class="buttons">
+          <button class="register" type="button">Inscreva-se</button>
+          <button class="enter" type="button">Entrar</button>
+        </article>
+      </header>
+      <section class="container-grid" id="container-grid">
+        <article id="layout-grid">
+          <section class="message">
+            <h2 id="greeting">Bom dia</h2>
+            <p>Navegando por todas as seções</p>
+          </section>
+          <section class="box-content">
+            <article class="box-grid">
+              <a class="card" href="#">
+                <h3>Boas festas</h3>
+                <img src="assets/1.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Feitos para você</h3>
+                <img src="assets/2.png" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Lançamentos</h3>
+                <img src="assets/3.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Creators</h3>
+                <img src="assets/4.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Para treinar</h3>
+                <img src="assets/5.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Podcasts</h3>
+                <img src="assets/6.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Sertanejos</h3>
+                <img src="assets/7.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Samba e pagode</h3>
+                <img src="assets/8.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Funk</h3>
+                <img src="assets/9.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>MPB</h3>
+                <img src="assets/10.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Rock</h3>
+                <img src="assets/11.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Hip Hop</h3>
+                <img src="assets/12.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Indie</h3>
+                <img src="assets/13.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Relax</h3>
+                <img src="assets/14.jpeg" alt="">
+              </a>
+              <a class="card" href="#">
+                <h3>Música Latina</h3>
+                <img src="assets/15.jpeg" alt="">
+              </a>
+            </article>
+          </section>
+        </article>
+      </section>
+      <section class="result-search" id="result-search"></section>
+    </main>
+  </div>
+  <footer>
+    <section>
+      <p>TESTAR O PREMIUM DE GRAÇA</p>
+      <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+    </section>
+    <button>Inscreva-se grátis</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
