@@ -21,7 +21,7 @@ git clone https://github.com/JuniorLima36/alura-spotify.git
 ```
 2. Abra o arquivo index.html em seu navegador.
 
-3. Comece a buscar por jogos utilizando o campo de pesquisa.
+3. Comece a buscar por artistas ou gêneros musicais utilizando o campo de pesquisa.
 
 ## 🧩 Dados da API
 ```json
